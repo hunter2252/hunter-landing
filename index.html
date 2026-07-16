@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter.mg - Scanner de sécurité anonyme</title>
+    <style>
+        :root { --bg: #0a0e17; --card: #111827; --primary: #10b981; --text: #e2e8f0; --text-muted: #94a3b8; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', Arial, sans-serif; background: var(--bg); color: var(--text); text-align: center; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        .logo { font-size: 3em; font-weight: 800; margin-bottom: 10px; }
+        .logo span { color: var(--primary); }
+        .badge { display: inline-block; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); padding: 6px 16px; border-radius: 20px; font-size: 0.85em; color: var(--primary); margin: 15px 0; }
+        h1 { font-size: 2em; margin: 20px 0; }
+        p { color: var(--text-muted); font-size: 1.1em; line-height: 1.6; margin: 15px 0; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 30px 0; text-align: left; }
+        .feature { background: var(--card); padding: 20px; border-radius: 10px; border: 1px solid #1e293b; }
+        .feature h3 { color: var(--primary); margin-bottom: 8px; }
+        .feature p { font-size: 0.9em; }
+        .onion-box { background: var(--card); border: 2px solid var(--primary); border-radius: 12px; padding: 25px; margin: 25px 0; }
+        .onion-box .url { font-family: monospace; font-size: 0.9em; color: var(--primary); word-break: break-all; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; display: block; margin: 10px 0; }
+        .btn { display: inline-block; padding: 14px 30px; border-radius: 8px; font-weight: 700; text-decoration: none; margin: 10px; }
+        .btn-primary { background: var(--primary); color: #000; }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
+        .qr { margin: 20px auto; display: block; max-width: 200px; }
+        .footer { color: var(--text-muted); font-size: 0.85em; margin-top: 40px; }
+        @media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Hunter<span>.mg</span></div>
+        <div class="badge">🛡️ Scanner de sécurité anonyme</div>
+        
+        <h1>Votre site est-il vraiment sécurisé ?</h1>
+        <p>Hunter.mg analyse votre site web et détecte les vulnérabilités avant les pirates. Le tout de manière <strong>100% anonyme</strong> via Tor.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🔍 Scan complet</h3>
+                <p>20+ vérifications : SSL, ports, CMS, headers, fichiers sensibles, failles XSS/SQLi</p>
+            </div>
+            <div class="feature">
+                <h3>🌐 Réseau & DNS</h3>
+                <p>WHOIS, DNS records, SPF/DMARC, sous-domaines, géolocalisation</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Rapport détaillé</h3>
+                <p>Score sur 100, architecture de sécurité, guides de correction pour chaque faille</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 100% Anonyme</h3>
+                <p>Vos scans sont privés. Aucune donnée partagée. Accessible uniquement via Tor.</p>
+            </div>
+        </div>
+
+        <div class="onion-box">
+            <h2>🧅 Accéder à Hunter.mg</h2>
+            <p>Ouvrez Tor Browser et rendez-vous sur :</p>
+            <span class="url">http://hf3eivw6rqomrfzseyftslx2kkpfcp3lrr26uixumvi2w4ie4zb547ad.onion</span>
+            <a href="https://www.torproject.org/download/" class="btn btn-primary">📥 Télécharger Tor Browser</a>
+            <br>
+            <img src="qrcode.png" alt="QR Code Hunter.mg" class="qr">
+            <p style="font-size:0.85em;">📱 Scannez ce QR code avec Tor Browser sur Android</p>
+        </div>
+
+        <p style="color:var(--text-muted);">
+            💡 <strong>Pourquoi Tor ?</strong> Vos scans de sécurité restent confidentiels. Ni votre FAI, ni personne ne sait que vous scannez votre site.
+        </p>
+
+        <div class="footer">
+            © 2026 Hunter.mg — Scanner de sécurité web professionnel
+        </div>
+    </div>
+</body>
+</html>
