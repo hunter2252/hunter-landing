@@ -79,5 +79,14 @@
         <br>
         </div>
     </div>
+<script>
+    if (window.location.hostname !== 'localhost') {
+        var counter = document.createElement('script');
+        counter.src = 'https://cdn.counter.dev/script.js';
+        counter.setAttribute('data-id', 'TON-ID-COUNTER');
+        counter.setAttribute('data-utcoffset', '3');
+        document.body.appendChild(counter);
+    }
+</script>
 </body>
 </html>
